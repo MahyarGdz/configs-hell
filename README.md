@@ -10,10 +10,12 @@ Install my-project with npm
 ```bash
   npm i -g configs-hell
 ```
-    
-## Run 
+
+## Run
 
 ```bash
   configs-hell init
 ```
 
+
+thanks !
