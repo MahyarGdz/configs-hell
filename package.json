@@ -1,6 +1,6 @@
 {
   "name": "configs-hell",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Easily initialize starting configuaration for your nodejs project.",
   "main": "lib/index.js",
   "types": "lib/types/index.d.ts",
@@ -48,7 +48,6 @@
     "start": "./bin/configs-hell.js",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
     "lint": "eslint . --ext .ts --fix",
-    "publish": "np",
     "release": "standard-version",
     "prepare": "husky || true"
   },
