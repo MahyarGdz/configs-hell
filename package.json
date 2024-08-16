@@ -1,6 +1,6 @@
 {
   "name": "configs-hell",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Easily initialize starting configuaration for your nodejs project.",
   "main": "lib/index.js",
   "types": "lib/types/index.d.ts",
