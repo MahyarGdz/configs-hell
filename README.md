@@ -2,6 +2,7 @@
 
 Easily initialize starting configuaration for your nodejs project.
 
+<img src="tty.gif" width="688">
 
 ## Installation
 
@@ -16,6 +17,5 @@ Install my-project with npm
 ```bash
   configs-hell init
 ```
-
 
 thanks !

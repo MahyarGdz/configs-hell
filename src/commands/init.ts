@@ -63,7 +63,7 @@ async function setupAction() {
   if (answers.gitignore) {
     console.log(yellow("=====================>"));
     console.log(green("Generate gitignore"));
-    copyTemplate(".gitignore", ".gitignore");
+    copyTemplate("gitignoreTemplate.txt", ".gitignore");
   }
 
   console.log("All selected configurations are set up successfully.");
