@@ -1,0 +1,95 @@
+{
+  "name": "configs-hell",
+  "version": "0.0.0",
+  "description": "Easily initialize starting configuaration for your nodejs project.",
+  "main": "lib/index.js",
+  "types": "lib/types/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MahyarGdz/configs-hell"
+  },
+  "bin": {
+    "configs-hell": "./bin/configs-hell.js"
+  },
+  "bugs": {
+    "url": "https://github.com/MahyarGdz/configs-hell/issues"
+  },
+  "contributors": [
+    {
+      "name": "Mahyar Goudarzi",
+      "githubUsername": "MahyarGdz",
+      "url": "https://github.com/MahyarGdz"
+    },
+    {
+      "name": "Abolfazl Ghaderi",
+      "githubUsername": "AbolfazlGhaderi",
+      "url": "https://github.com/AbolfazlGhaderi"
+    }
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "configs",
+    "api",
+    "documentation",
+    "express",
+    "express.js",
+    "integration",
+    "nestjs",
+    "nodejs",
+    "typescript",
+    "eslint"
+  ],
+  "scripts": {
+    "prebuild": "rimraf lib/",
+    "build": "tsc -p tsconfig.build.json && cp -R ./src/template/ ./lib",
+    "build:types": "tsc -p tsconfig.types.json",
+    "start": "./bin/configs-hell.js",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
+    "lint": "eslint . --ext .ts --fix",
+    "publish": "np",
+    "release": "standard-version",
+    "prepare": "husky || true"
+  },
+  "lint-staged": {
+    "**/*.ts": [
+      "npm run format",
+      "npm run lint",
+      "git add ."
+    ]
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@types/node": "^20.14.10",
+    "@types/shelljs": "^0.8.15",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "husky": "^9.0.11",
+    "np": "^10.0.6",
+    "prettier": "^3.3.2",
+    "rimraf": "^5.0.8",
+    "standard-version": "^9.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "bin",
+    "lib/"
+  ],
+  "dependencies": {
+    "@inquirer/prompts": "^5.2.1",
+    "ansi-colors": "^4.1.3",
+    "commander": "^12.1.0",
+    "execa": "^9.3.0",
+    "shelljs": "^0.8.5"
+  }
+}
