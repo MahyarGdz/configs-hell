@@ -6,7 +6,7 @@ Easily initialize starting configuaration for your nodejs project.
 
 ## Installation
 
-Install my-project with npm
+Install configs-hell with npm
 
 ```bash
   npm i -g configs-hell
